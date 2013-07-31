@@ -1,0 +1,17 @@
+.app{ng: {app: "StrAng"}}
+  .controller{ng: {controller: 'ChargeCtrl'}}
+    %p
+      {{message}}
+    %h1 We will we will charge you
+    %h3 Card number
+    %input{type: 'text', ng: {model: 'card.number'}}
+    %h3 Name
+    %input{type: 'text', ng: {model: 'card.name'}}
+    %h3 CVC
+    %input{type: 'text', ng: {model: 'card.cvc'}}
+    %h3 Exp. year
+    %input{type: 'text', ng: {model: 'card.expYear'}}
+    %h3 Exp. month
+    %input{type: 'text', ng: {model: 'card.expMonth'}}
+
+    %button{ng: {click: 'submitCard(card)'}} Charge! Yeey!
